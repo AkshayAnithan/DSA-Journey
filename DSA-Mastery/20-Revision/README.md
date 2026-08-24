@@ -12,3 +12,7 @@ Use this folder for active-recall prompts and review queues. Do not read a patte
 | 2026-08-25 | Find Minimum in Rotated Sorted Array | Reconstruction | Re-code the compact C++ version from blank; explain why `right = mid` | Pending |
 | 2026-08-27 | Search in Rotated Sorted Array | Transfer | Independently derive which ordered half can be discarded for a target | Pending |
 | 2026-08-31 | Rotated minimum vs Koko | Contrast | Classify index-order search versus monotonic-feasibility search before coding | Pending |
+| 2026-08-24 | Search in Rotated Sorted Array | Same-day recall | State both ordered-half target-range checks without code | Passed |
+| 2026-08-25 | Search in Rotated Sorted Array | Reconstruction | Re-code with positive target-range checks and state invariant first | Pending |
+| 2026-08-27 | Rotated target search examples | Retrieval | Explain one example where target remains in each sorted half | Pending |
+| 2026-08-31 | Three binary-search structures | Contrast | Distinguish Koko, rotated minimum, and rotated target search | Pending |

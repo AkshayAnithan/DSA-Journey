@@ -6,3 +6,4 @@ Pattern notes and audited problem records for ordered search, bounds, rotated se
 
 - [Koko Eating Bananas: Binary Search on the Answer](Koko-Eating-Bananas.md)
 - [Find Minimum in Rotated Sorted Array: Rotated Binary Search](Find-Minimum-Rotated-Sorted-Array.md)
+- [Search in Rotated Sorted Array: Ordered-Half Elimination](Search-Rotated-Sorted-Array.md)
