@@ -77,7 +77,7 @@ Build independent problem generation: understand the prompt, derive a brute forc
 
 - Experience: 3 years software development.
 - Target: SDE-2 at FAANG/top product companies.
-- Primary bank: NeetCode 150; 37 completed but not yet audited.
+- Primary bank: NeetCode 150; 41 completed but not yet audited for mastery.
 - Current failure mode: solution recognition exceeds retrieval and generation.
 - Preferred teaching influences: NeetCode clarity plus TakeUforward-style derivation.
 
@@ -87,7 +87,7 @@ Build independent problem generation: understand the prompt, derive a brute forc
 - Branch: `main`
 - Primary language: C++; secondary languages: C# and Python
 - Completion source of truth: one or more `submission-*` files under `Data Structures & Algorithms/<problem-directory>/`
-- Imported baseline: 37 unique completed NeetCode problems as of 2026-08-22
+- Imported baseline: 41 unique completed NeetCode problems as of 2026-08-24
 - Mastery status: unassessed; submitted code is evidence of completion only
 
 See [30-Day Study Playbook](00-Foundations/30-Day-Study-Playbook.md), [30-Day Roadmap](00-Foundations/30-Day-Roadmap.md), [NeetCode 150 Pattern Map](Problem-Index/NeetCode-150-Pattern-Map.md), [Automatic Progress Tracking](Problem-Index/Automatic-Progress-Tracking.md), and [Tracking System](00-Foundations/Tracking-System.md).

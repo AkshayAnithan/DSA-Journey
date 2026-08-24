@@ -1,6 +1,6 @@
 # Imported Completion Ledger
 
-Imported from [AkshayAnithan/DSA_CP](https://github.com/AkshayAnithan/DSA_CP), branch `main`, on 2026-08-22. A row means a solution directory exists; it does **not** mean independent recall or mastery.
+Imported from [AkshayAnithan/DSA_CP](https://github.com/AkshayAnithan/DSA_CP), branch `main`, on 2026-08-24. A row means a solution directory exists; it does **not** mean independent recall or mastery.
 
 ## Baseline Summary
 
@@ -10,11 +10,11 @@ Imported from [AkshayAnithan/DSA_CP](https://github.com/AkshayAnithan/DSA_CP), b
 | Two Pointers | 5 | 5 | Unassessed |
 | Sliding Window | 0 | 6 | Unassessed |
 | Stack | 6 | 7 | Unassessed |
-| Binary Search | 2 | 7 | Unassessed |
+| Binary Search | 6 | 7 | Coached evidence recorded for four recent submissions |
 | Linked List | 0 | 11 | Unassessed |
 | Trees | 15 | 15 | Unassessed |
 | Heap through Bit Manipulation | 0 | 97 | Unassessed |
-| **Total** | **37** | **150** | **Unassessed** |
+| **Total** | **41** | **150** | **Binary Search evidence in progress** |
 
 ## Imported Problems
 
@@ -42,6 +42,10 @@ Imported from [AkshayAnithan/DSA_CP](https://github.com/AkshayAnithan/DSA_CP), b
 | Stack | Largest Rectangle in Histogram | `largest-rectangle-in-histogram` | First smaller boundaries determine span | Monotonic stack |
 | Binary Search | Binary Search | `binary-search` | Ordering allows half elimination | Search invariant |
 | Binary Search | Search a 2D Matrix | `search-2d-matrix` | Matrix has global order | Flattened binary search |
+| Binary Search | Koko Eating Bananas | `eating-bananas` | Feasibility changes monotonically with answer | Binary search on answer |
+| Binary Search | Find Minimum in Rotated Sorted Array | `find-minimum-in-rotated-sorted-array` | One half remains ordered | Rotated binary search |
+| Binary Search | Search in Rotated Sorted Array | `find-target-in-rotated-sorted-array` | Identify a sorted half, then test target range | Ordered-half elimination |
+| Binary Search | Time Based Key-Value Store | `time-based-key-value-store` | Latest timestamp at or before request | Rightmost-valid binary search |
 | Trees | Invert Binary Tree | `invert-a-binary-tree` | Same local operation at each node | DFS recursion |
 | Trees | Maximum Depth of Binary Tree | `depth-of-binary-tree` | Parent answer aggregates child answers | DFS height contract |
 | Trees | Diameter of Binary Tree | `binary-tree-diameter` | Best path may pass through a node | Post-order aggregation |
@@ -57,6 +61,10 @@ Imported from [AkshayAnithan/DSA_CP](https://github.com/AkshayAnithan/DSA_CP), b
 | Trees | Construct Tree from Preorder and Inorder | `binary-tree-from-preorder-and-inorder-traversal` | Traversal orders identify root and partitions | Recursive construction plus index map |
 | Trees | Binary Tree Maximum Path Sum | `binary-tree-maximum-path-sum` | Returned path and global path differ | Post-order DP |
 | Trees | Serialize and Deserialize Binary Tree | `serialize-and-deserialize-binary-tree` | Structure needs null markers and reversible format | DFS encoding |
+
+## Synchronization Note
+
+The connected repository's generated README reports `41 / 150` overall and `7 / 7` for Binary Search as of 2026-08-24. Its solution tree verifies 41 distinct problem directories overall and the six binary-search directories listed above. This ledger uses the verifiable directory count; `Median of Two Sorted Arrays` remains the one unverified binary-search entry.
 
 ## First Revision Priority
 

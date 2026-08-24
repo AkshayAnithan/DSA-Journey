@@ -4,7 +4,7 @@
 
 **FAANG SDE-2 Interview Preparation | NeetCode 150 | C++ Primary**
 
-`37 / 150 submitted` · `Evidence-based mastery tracking` · `Active recall + transfer practice`
+`41 / 150 submitted` · `Evidence-based mastery tracking` · `Active recall + transfer practice`
 
 [Mastery System](DSA-Mastery/README.md) · [30-Day Playbook](DSA-Mastery/00-Foundations/30-Day-Study-Playbook.md) · [Revision Queue](DSA-Mastery/20-Revision/README.md) · [Problem Ledger](DSA-Mastery/Problem-Index/Imported-Completion-Ledger.md)
 
@@ -26,7 +26,7 @@ An accepted submission proves completion. It does **not** automatically prove re
 | Primary language | C++ |
 | Secondary languages | C#, Python |
 | Core problem bank | NeetCode 150 |
-| Imported submissions | 37 / 150 |
+| Imported submissions | 41 / 150 |
 | Study mode | 30-day pattern-mastery sprint |
 | Latest coached evidence | Time Map: predecessor search derived; edge-case implementation hint used |
 
@@ -40,7 +40,7 @@ Coverage tells us where code has been submitted. Mastery is deliberately stricte
 | Two Pointers | 5 / 5 | Complete | Unassessed | Justify pointer moves, especially water/rain problems |
 | Sliding Window | 0 / 6 | Not started | Not assessed | Build variable-window invariants |
 | Stack | 6 / 7 | Strong coverage | Unassessed | Reconstruct monotonic-stack boundaries |
-| Binary Search | 2 / 7 submitted + 3 coached pending commit | In progress | Answer-space developing; rotated pivot recalled; predecessor search derived with edge-case help | Reconstruct rightmost-valid search and rotated target search |
+| Binary Search | 6 / 7 submitted | Near-complete coverage | Answer-space developing; rotated pivot recalled; predecessor search derived with edge-case help | Reconstruct rightmost-valid and rotated target search; then attempt median of two sorted arrays |
 | Linked List | 0 / 11 | Not started | Not assessed | Start after binary-search consolidation |
 | Trees | 15 / 15 | Complete | Unassessed | Audit recursive contracts blind |
 | Heap / Priority Queue | 0 / 7 | Not started | Not assessed | Learn after graph traversal basics |
@@ -77,7 +77,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 | Tree BFS | Output depends on levels or nearest distance | Level Order, Right Side View | Practiced |
 | BST invariants | Ordering has meaning across an entire subtree | Validate BST, Kth Smallest, LCA | Practiced |
 
-## Solved Problem Baseline: 37
+## Solved Problem Baseline: 41
 
 <details>
 <summary><strong>Arrays & Hashing · 9 / 9</strong></summary>
@@ -118,12 +118,16 @@ No topic is marked mastered merely because its section is complete. A topic beco
 </details>
 
 <details>
-<summary><strong>Binary Search · 2 / 7 submitted</strong></summary>
+<summary><strong>Binary Search · 6 / 7 submitted</strong></summary>
 
 - Binary Search
 - Search a 2D Matrix
+- Koko Eating Bananas
+- Find Minimum in Rotated Sorted Array
+- Search in Rotated Sorted Array
+- Time Based Key-Value Store
 
-Current coached work: [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md), and [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md), all pending repository submission.
+The remaining unverified NeetCode 150 binary-search entry is `Median of Two Sorted Arrays`. The source repository's generated category display says `7 / 7`, but its solution tree currently verifies the six directories listed here.
 
 </details>
 
