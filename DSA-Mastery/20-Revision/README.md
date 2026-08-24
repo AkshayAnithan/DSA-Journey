@@ -16,3 +16,7 @@ Use this folder for active-recall prompts and review queues. Do not read a patte
 | 2026-08-25 | Search in Rotated Sorted Array | Reconstruction | Re-code with positive target-range checks and state invariant first | Pending |
 | 2026-08-27 | Rotated target search examples | Retrieval | Explain one example where target remains in each sorted half | Pending |
 | 2026-08-31 | Three binary-search structures | Contrast | Distinguish Koko, rotated minimum, and rotated target search | Pending |
+| 2026-08-24 | Time Based Key-Value Store | Same-day recall | State the rightmost-valid predicate, sentinel, and boundary updates without code | Pending |
+| 2026-08-25 | Time Based Key-Value Store | Reconstruction | Re-code `get` from blank, including query-before-first-timestamp case | Pending |
+| 2026-08-27 | Rightmost predecessor helper | Transfer | Write and explain rightmost `value <= target` binary search for integers | Pending |
+| 2026-08-31 | Predecessor versus exact search | Contrast | Explain why equality-only binary search fails for historical lookup | Pending |

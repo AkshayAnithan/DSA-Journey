@@ -28,7 +28,7 @@ An accepted submission proves completion. It does **not** automatically prove re
 | Core problem bank | NeetCode 150 |
 | Imported submissions | 37 / 150 |
 | Study mode | 30-day pattern-mastery sprint |
-| Latest coached evidence | Rotated target search: same-day decision-table recall passed; reconstruction pending |
+| Latest coached evidence | Time Map: predecessor search derived; edge-case implementation hint used |
 
 ## Coverage vs Mastery
 
@@ -40,7 +40,7 @@ Coverage tells us where code has been submitted. Mastery is deliberately stricte
 | Two Pointers | 5 / 5 | Complete | Unassessed | Justify pointer moves, especially water/rain problems |
 | Sliding Window | 0 / 6 | Not started | Not assessed | Build variable-window invariants |
 | Stack | 6 / 7 | Strong coverage | Unassessed | Reconstruct monotonic-stack boundaries |
-| Binary Search | 2 / 7 submitted + 2 coached pending commit | In progress | Answer-space developing; rotated pivot recalled; rotated target solution-dependent | Reconstruct ordered-half target search before new variants |
+| Binary Search | 2 / 7 submitted + 3 coached pending commit | In progress | Answer-space developing; rotated pivot recalled; predecessor search derived with edge-case help | Reconstruct rightmost-valid search and rotated target search |
 | Linked List | 0 / 11 | Not started | Not assessed | Start after binary-search consolidation |
 | Trees | 15 / 15 | Complete | Unassessed | Audit recursive contracts blind |
 | Heap / Priority Queue | 0 / 7 | Not started | Not assessed | Learn after graph traversal basics |
@@ -72,6 +72,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 | Binary search on answer | Minimum/maximum answer with monotonic feasibility | [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md) | Developing |
 | Rotated binary search | One rotation leaves one half ordered; discard the half without the pivot/target | [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md) | Needs reconstruction |
 | Ordered-half target search | Identify a sorted half, then test whether target lies in its value range | [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md) | Needs reconstruction |
+| Rightmost-valid search | Find the latest sorted record satisfying `value <= threshold` | [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md) | Developing |
 | Tree DFS contracts | A child returns exactly the information its parent needs | Diameter, Balance, Max Path Sum | Practiced |
 | Tree BFS | Output depends on levels or nearest distance | Level Order, Right Side View | Practiced |
 | BST invariants | Ordering has meaning across an entire subtree | Validate BST, Kth Smallest, LCA | Practiced |
@@ -122,7 +123,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 - Binary Search
 - Search a 2D Matrix
 
-Current coached work: [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), and [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md), all pending repository submission.
+Current coached work: [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md), and [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md), all pending repository submission.
 
 </details>
 
@@ -175,17 +176,17 @@ I do not open solutions immediately. After a first-principles attempt, hints pro
 
 ### Binary Search: Two Different Search Structures
 
-The active lessons are [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), and [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md).
+The active lessons are [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md), and [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md).
 
 Key retrieval rule:
 
-> Binary search needs a justified discard rule, not necessarily a globally sorted array. In Koko, discard answer values using monotonic feasibility. In rotated arrays, discard index ranges by first identifying a sorted half, then testing whether it can contain the answer or target.
+> Binary search needs a justified discard rule, not necessarily a globally sorted array. In Koko, discard answer values using monotonic feasibility. In rotated arrays, discard index ranges using an ordered-half test. In Time Map, find the rightmost sorted timestamp satisfying a threshold.
 
 Next progression:
 
-1. Reconstruct rotated target search from a blank editor using the two-row decision table.
-2. Explain the difference between pivot-finding and target-finding in a rotated array.
-3. Contrast both with Koko by stating the search space and discard rule for each.
+1. Reconstruct Time Map's rightmost-valid lookup, including the no-candidate sentinel.
+2. Reconstruct rotated target search from a blank editor using the two-row decision table.
+3. Contrast exact lookup, predecessor lookup, rotated index search, and answer-space search.
 
 ## Repository Guide
 
