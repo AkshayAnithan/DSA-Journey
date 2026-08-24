@@ -28,7 +28,7 @@ An accepted submission proves completion. It does **not** automatically prove re
 | Core problem bank | NeetCode 150 |
 | Imported submissions | 37 / 150 |
 | Study mode | 30-day pattern-mastery sprint |
-| First coached evidence | Koko Eating Bananas: binary search on answer, technique-assisted |
+| Latest coached evidence | Rotated minimum: same-day recall completed; reconstruction pending |
 
 ## Coverage vs Mastery
 
@@ -40,7 +40,7 @@ Coverage tells us where code has been submitted. Mastery is deliberately stricte
 | Two Pointers | 5 / 5 | Complete | Unassessed | Justify pointer moves, especially water/rain problems |
 | Sliding Window | 0 / 6 | Not started | Not assessed | Build variable-window invariants |
 | Stack | 6 / 7 | Strong coverage | Unassessed | Reconstruct monotonic-stack boundaries |
-| Binary Search | 2 / 7 | In progress | Developing: answer-space search | Continue Koko recall, then transfer to shipping capacity |
+| Binary Search | 2 / 7 submitted + 1 coached pending commit | In progress | Answer-space search developing; rotated search solution-dependent | Reconstruct rotated minimum before new binary-search variants |
 | Linked List | 0 / 11 | Not started | Not assessed | Start after binary-search consolidation |
 | Trees | 15 / 15 | Complete | Unassessed | Audit recursive contracts blind |
 | Heap / Priority Queue | 0 / 7 | Not started | Not assessed | Learn after graph traversal basics |
@@ -70,6 +70,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 | Monotonic stack | Need a next/previous greater/smaller boundary | Daily Temperatures, Largest Rectangle in Histogram | Practiced |
 | Binary search on indices | Ordering lets a half be discarded | Binary Search, Search a 2D Matrix | Practiced |
 | Binary search on answer | Minimum/maximum answer with monotonic feasibility | [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md) | Developing |
+| Rotated binary search | One rotation leaves one half ordered; discard the half without the pivot/target | [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md) | Needs reconstruction |
 | Tree DFS contracts | A child returns exactly the information its parent needs | Diameter, Balance, Max Path Sum | Practiced |
 | Tree BFS | Output depends on levels or nearest distance | Level Order, Right Side View | Practiced |
 | BST invariants | Ordering has meaning across an entire subtree | Validate BST, Kth Smallest, LCA | Practiced |
@@ -120,7 +121,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 - Binary Search
 - Search a 2D Matrix
 
-Current coached work: [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), pending repository submission.
+Current coached work: [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md) and [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), both pending repository submission.
 
 </details>
 
@@ -171,19 +172,19 @@ I do not open solutions immediately. After a first-principles attempt, hints pro
 
 ## Current Focus
 
-### Binary Search: Monotonic Feasibility
+### Binary Search: Two Different Search Structures
 
-The active binary-search lesson is [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md).
+The active lessons are [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md) and [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md).
 
 Key retrieval rule:
 
-> When a problem asks for the minimum/maximum integer that satisfies a condition, define `canDo(x)`. If it is monotonic, binary-search the answer values rather than array indices.
+> Binary search needs a justified discard rule, not necessarily a globally sorted array. In Koko, discard answer values using monotonic feasibility. In a rotated array, discard index ranges using the ordered-half invariant.
 
 Next progression:
 
-1. Reconstruct Koko from a blank editor.
-2. Transfer: `Capacity To Ship Packages Within D Days`.
-3. Contrast: explain why rotated-array search uses index ordering rather than an answer-space predicate.
+1. Reconstruct rotated minimum from a blank editor without this card.
+2. Transfer: `Search in Rotated Sorted Array`.
+3. Contrast it with Koko by stating the search space and discard rule for both.
 
 ## Repository Guide
 
