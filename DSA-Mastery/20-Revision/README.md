@@ -20,3 +20,8 @@ Use this folder for active-recall prompts and review queues. Do not read a patte
 | 2026-08-25 | Time Based Key-Value Store | Reconstruction | Re-code `get` from blank, including query-before-first-timestamp case | Pending |
 | 2026-08-27 | Rightmost predecessor helper | Transfer | Write and explain rightmost `value <= target` binary search for integers | Pending |
 | 2026-08-31 | Predecessor versus exact search | Contrast | Explain why equality-only binary search fails for historical lookup | Pending |
+| 2026-08-26 | Median of Two Sorted Arrays | Same-day recall | Define cuts as counts and state all four sentinel boundaries without notes | Pending |
+| 2026-08-27 | Median of Two Sorted Arrays | Boundary reconstruction | Write `cutA`, `cutB`, and the four boundaries from a blank editor | Pending |
+| 2026-08-29 | Median of Two Sorted Arrays | Full reconstruction | Implement the partition search in C++ without notes | Pending |
+| 2026-09-02 | Median partition off-by-one | Contrast | Explain why a cut after A's last element needs `rightA = INT_MAX` | Pending |
+| 2026-09-09 | Median of Two Sorted Arrays | Blind derivation | Re-derive a valid partition from a new example before viewing notes | Pending |

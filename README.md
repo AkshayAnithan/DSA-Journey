@@ -28,7 +28,7 @@ An accepted submission proves completion. It does **not** automatically prove re
 | Core problem bank | NeetCode 150 |
 | Imported submissions | 41 / 150 |
 | Study mode | 30-day pattern-mastery sprint |
-| Latest coached evidence | Time Map: predecessor search derived; edge-case implementation hint used |
+| Latest coached evidence | Median partition: hard problem completed with guided derivation; reconstruction scheduled |
 
 ## Coverage vs Mastery
 
@@ -40,7 +40,7 @@ Coverage tells us where code has been submitted. Mastery is deliberately stricte
 | Two Pointers | 5 / 5 | Complete | Unassessed | Justify pointer moves, especially water/rain problems |
 | Sliding Window | 0 / 6 | Not started | Not assessed | Build variable-window invariants |
 | Stack | 6 / 7 | Strong coverage | Unassessed | Reconstruct monotonic-stack boundaries |
-| Binary Search | 6 / 7 submitted | Near-complete coverage | Answer-space developing; rotated pivot recalled; predecessor search derived with edge-case help | Reconstruct rightmost-valid and rotated target search; then attempt median of two sorted arrays |
+| Binary Search | 6 / 7 submitted + 1 coached pending commit | Full problem coverage | Answer-space developing; rotated pivot recalled; predecessor search derived; median partition solution-dependent | Reconstruct median partition before treating binary search as strong |
 | Linked List | 0 / 11 | Not started | Not assessed | Start after binary-search consolidation |
 | Trees | 15 / 15 | Complete | Unassessed | Audit recursive contracts blind |
 | Heap / Priority Queue | 0 / 7 | Not started | Not assessed | Learn after graph traversal basics |
@@ -73,6 +73,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 | Rotated binary search | One rotation leaves one half ordered; discard the half without the pivot/target | [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md) | Needs reconstruction |
 | Ordered-half target search | Identify a sorted half, then test whether target lies in its value range | [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md) | Needs reconstruction |
 | Rightmost-valid search | Find the latest sorted record satisfying `value <= threshold` | [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md) | Developing |
+| Partition search | Find a valid split across two sorted collections using four boundaries | [Median of Two Sorted Arrays](DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md) | Needs reconstruction |
 | Tree DFS contracts | A child returns exactly the information its parent needs | Diameter, Balance, Max Path Sum | Practiced |
 | Tree BFS | Output depends on levels or nearest distance | Level Order, Right Side View | Practiced |
 | BST invariants | Ordering has meaning across an entire subtree | Validate BST, Kth Smallest, LCA | Practiced |
@@ -127,7 +128,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 - Search in Rotated Sorted Array
 - Time Based Key-Value Store
 
-The remaining unverified NeetCode 150 binary-search entry is `Median of Two Sorted Arrays`. The source repository's generated category display says `7 / 7`, but its solution tree currently verifies the six directories listed here.
+`Median of Two Sorted Arrays` is completed in coaching and pending a source-repository submission. Once committed, the binary-search section will have seven verified entries.
 
 </details>
 
@@ -180,17 +181,17 @@ I do not open solutions immediately. After a first-principles attempt, hints pro
 
 ### Binary Search: Two Different Search Structures
 
-The active lessons are [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md), and [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md).
+The active lessons are [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md), [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md), and [Median of Two Sorted Arrays](DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md).
 
 Key retrieval rule:
 
-> Binary search needs a justified discard rule, not necessarily a globally sorted array. In Koko, discard answer values using monotonic feasibility. In rotated arrays, discard index ranges using an ordered-half test. In Time Map, find the rightmost sorted timestamp satisfying a threshold.
+> Binary search needs a justified discard rule, not necessarily a globally sorted array. In Koko, discard answer values using monotonic feasibility. In rotated arrays, discard index ranges using an ordered-half test. In Time Map, find the rightmost sorted timestamp satisfying a threshold. In median partitioning, search a cut count until four boundaries form a valid split.
 
 Next progression:
 
-1. Reconstruct Time Map's rightmost-valid lookup, including the no-candidate sentinel.
-2. Reconstruct rotated target search from a blank editor using the two-row decision table.
-3. Contrast exact lookup, predecessor lookup, rotated index search, and answer-space search.
+1. Reconstruct the four-boundary setup for median partitioning from a blank editor.
+2. Reconstruct Time Map's rightmost-valid lookup, including the no-candidate sentinel.
+3. Contrast answer-space, rotated-index, predecessor, and partition binary search.
 
 ## Repository Guide
 
