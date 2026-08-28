@@ -28,7 +28,7 @@ An accepted submission proves completion. It does **not** automatically prove re
 | Core problem bank | NeetCode 150 |
 | Imported submissions | 41 / 150 |
 | Study mode | 30-day pattern-mastery sprint |
-| Latest coached evidence | Buy and Sell Crypto: running-minimum derivation completed with bottleneck guidance |
+| Latest coached evidence | Longest Substring Without Duplicates: independently implemented variable-window repair after structural guidance |
 
 ## Coverage vs Mastery
 
@@ -38,7 +38,7 @@ Coverage tells us where code has been submitted. Mastery is deliberately stricte
 | --- | ---: | --- | --- | --- |
 | Arrays & Hashing | 9 / 9 | Complete | Unassessed | Blind reconstruction of prefix/suffix and hashing problems |
 | Two Pointers | 5 / 5 | Complete | Unassessed | Justify pointer moves, especially water/rain problems |
-| Sliding Window | 0 / 6 submitted + 1 coached pending commit | Started | Running-minimum prefix invariant introduced | Derive a variable-window invariant for no-repeated-character substring |
+| Sliding Window | 0 / 6 submitted + 2 coached pending commit | Started | Prefix minimum and variable-window repair derived | Transfer the repair invariant to character-replacement constraints |
 | Stack | 6 / 7 | Strong coverage | Unassessed | Reconstruct monotonic-stack boundaries |
 | Binary Search | 6 / 7 submitted + 1 coached pending commit | Full problem coverage | Answer-space developing; rotated pivot recalled; predecessor search derived; median partition solution-dependent | Reconstruct median partition before treating binary search as strong |
 | Linked List | 0 / 11 | Not started | Not assessed | Start after binary-search consolidation |
@@ -75,6 +75,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 | Rightmost-valid search | Find the latest sorted record satisfying `value <= threshold` | [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md) | Developing |
 | Partition search | Find a valid split across two sorted collections using four boundaries | [Median of Two Sorted Arrays](DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md) | Needs reconstruction |
 | Running prefix minimum | Best current result pairs with one best/worst earlier value | [Buy and Sell Crypto](DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md) | Developing |
+| Variable window | A contiguous range becomes valid again by removing elements from the left | [Longest Substring Without Duplicates](DSA-Mastery/03-Sliding-Window/Longest-Substring-Without-Duplicates.md) | Developing |
 | Tree DFS contracts | A child returns exactly the information its parent needs | Diameter, Balance, Max Path Sum | Practiced |
 | Tree BFS | Output depends on levels or nearest distance | Level Order, Right Side View | Practiced |
 | BST invariants | Ordering has meaning across an entire subtree | Validate BST, Kth Smallest, LCA | Practiced |
@@ -120,9 +121,10 @@ No topic is marked mastered merely because its section is complete. A topic beco
 </details>
 
 <details>
-<summary><strong>Sliding Window · 0 / 6 submitted + 1 coached pending commit</strong></summary>
+<summary><strong>Sliding Window · 0 / 6 submitted + 2 coached pending commit</strong></summary>
 
 - [Buy and Sell Crypto](DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md) - running minimum / one-pass prefix invariant
+- [Longest Substring Without Duplicates](DSA-Mastery/03-Sliding-Window/Longest-Substring-Without-Duplicates.md) - variable-window repair / duplicate tracking
 
 </details>
 
@@ -189,17 +191,17 @@ I do not open solutions immediately. After a first-principles attempt, hints pro
 
 ### Sliding Window: Start With the Invariant
 
-The active lesson is [Buy and Sell Crypto](DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md). It uses a prefix summary, not a movable window: the current sale needs only the cheapest earlier price.
+The active lessons are [Buy and Sell Crypto](DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md) and [Longest Substring Without Duplicates](DSA-Mastery/03-Sliding-Window/Longest-Substring-Without-Duplicates.md). The first uses a prefix summary; the second requires a movable left boundary to repair duplicate violations.
 
 Key retrieval rule:
 
-> When a problem compares every current value with prior values, first ask whether one running summary replaces the entire prior prefix. A movable left boundary is needed only when validity can be restored by removing old elements.
+> For a contiguous-range constraint, hold a window invariant. When the new element violates it, move the left boundary and remove its outgoing state until the invariant is true again.
 
 Next progression:
 
-1. Attempt `Longest Substring Without Repeating Characters` without naming its pattern first.
-2. Contrast its movable left boundary with Buy and Sell Crypto's running minimum.
-3. Complete the Buy and Sell Crypto same-day recall from the revision dashboard.
+1. Reconstruct Longest Substring Without Duplicates from a blank editor using `unordered_set`.
+2. Explain, using `"abba"`, why duplicate repair needs `while` rather than `if`.
+3. Derive a validity test for Longest Repeating Character Replacement before coding it.
 
 ## Repository Guide
 

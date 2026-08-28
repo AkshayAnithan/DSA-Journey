@@ -169,6 +169,50 @@
       "notePath": "DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md",
       "status": "due",
       "history": []
+    },
+    {
+      "id": "longest-substring-without-duplicates-same-day",
+      "title": "Longest Substring Without Duplicates",
+      "topic": "Sliding Window",
+      "stage": "same-day-trace",
+      "dueDate": "2026-08-28",
+      "prompt": "Trace abba and explain why the duplicate repair must use while, not if.",
+      "notePath": "DSA-Mastery/03-Sliding-Window/Longest-Substring-Without-Duplicates.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "longest-substring-without-duplicates-reconstruction",
+      "title": "Longest Substring Without Duplicates",
+      "topic": "Sliding Window",
+      "stage": "reconstruction",
+      "dueDate": "2026-08-29",
+      "prompt": "Re-code the unordered_set version from blank and state the window invariant before coding.",
+      "notePath": "DSA-Mastery/03-Sliding-Window/Longest-Substring-Without-Duplicates.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "longest-substring-without-duplicates-transfer",
+      "title": "Variable-window validity transfer",
+      "topic": "Sliding Window",
+      "stage": "transfer",
+      "dueDate": "2026-08-31",
+      "prompt": "Derive the validity condition and repair rule for Longest Repeating Character Replacement without code hints.",
+      "notePath": "DSA-Mastery/03-Sliding-Window/Longest-Substring-Without-Duplicates.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "longest-substring-without-duplicates-contrast",
+      "title": "Variable window versus prefix summary",
+      "topic": "Sliding Window",
+      "stage": "contrast",
+      "dueDate": "2026-09-04",
+      "prompt": "Contrast Longest Substring Without Duplicates with Buy and Sell Crypto: which invariant needs a left boundary, and why?",
+      "notePath": "DSA-Mastery/03-Sliding-Window/Longest-Substring-Without-Duplicates.md",
+      "status": "due",
+      "history": []
     }
   ]
 }
