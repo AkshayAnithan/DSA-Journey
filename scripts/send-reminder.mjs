@@ -8,8 +8,8 @@ const topic = process.env.NTFY_TOPIC;
 const token = process.env.NTFY_TOKEN;
 const dashboardUrl = process.env.REVISION_DASHBOARD_URL || 'https://github.com/AkshayAnithan/DSA-Journey/tree/master/DSA-Mastery/20-Revision';
 
-if (!topic || !token) {
-  throw new Error('NTFY_TOPIC and NTFY_TOKEN must be configured as GitHub Actions secrets.');
+if (!topic) {
+  throw new Error('NTFY_TOPIC must be configured as a GitHub Actions secret.');
 }
 
 const state = JSON.parse(await readFile(statePath, 'utf8'));
@@ -28,15 +28,20 @@ const overdueCount = due.filter((review) => review.dueDate < today).length;
 const lines = due.map((review, index) => `${index + 1}. ${review.title}\n${review.stage.replaceAll('-', ' ')} - ${review.prompt}`).join('\n\n');
 const overduePrefix = overdueCount ? `${overdueCount} overdue. ` : '';
 const message = `${overduePrefix}Attempt before notes.\n\n${lines}`;
+const headers = {
+  Title: `DSA revision: ${due.length} due`,
+  Priority: overdueCount ? 'high' : 'default',
+  Tags: 'brain,books',
+  Click: dashboardUrl
+};
+
+if (token) {
+  headers.Authorization = `Bearer ${token}`;
+}
+
 const response = await fetch(`https://ntfy.sh/${encodeURIComponent(topic)}`, {
   method: 'POST',
-  headers: {
-    Authorization: `Bearer ${token}`,
-    Title: `DSA revision: ${due.length} due`,
-    Priority: overdueCount ? 'high' : 'default',
-    Tags: 'brain,books',
-    Click: dashboardUrl
-  },
+  headers,
   body: message
 });
 

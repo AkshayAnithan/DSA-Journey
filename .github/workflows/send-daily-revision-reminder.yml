@@ -24,6 +24,6 @@ jobs:
       - name: Send ntfy reminder
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }} # Optional for a long random public topic.
           REVISION_DASHBOARD_URL: ${{ vars.REVISION_DASHBOARD_URL }}
         run: node scripts/send-reminder.mjs

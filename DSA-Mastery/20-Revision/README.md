@@ -7,11 +7,11 @@ The legacy table below is the initial imported queue. New outcomes are recorded 
 ## Mobile Reminder Setup
 
 1. Install the [ntfy](https://ntfy.sh) mobile app and subscribe to a private, long random topic.
-2. Create an ntfy access token with publish access to that topic.
-3. In this repository on GitHub, add Actions secrets named `NTFY_TOPIC` and `NTFY_TOKEN`.
-4. Push this repository. The [daily workflow](../../.github/workflows/send-daily-revision-reminder.yml) runs at 7:30 PM IST (`14:00 UTC`) and sends up to three due reviews.
+2. In this repository on GitHub, add an Actions secret named `NTFY_TOPIC` with that exact topic name.
+3. Optional: create an ntfy access token and add it as `NTFY_TOKEN` if you later use authenticated topic access.
+4. Push this repository. The [daily workflow](../../.github/workflows/send-daily-revision-reminder.yml) runs at 7:30 AM IST (`02:00 UTC`) and sends up to three due reviews.
 
-The workflow reads the committed revision state. After recording outcomes locally, commit and push `revision-state.json` before the next mobile reminder so it uses the latest schedule.
+The workflow reads the committed revision state. After recording outcomes locally, commit and push `revision-state.json` before the next mobile reminder so it uses the latest schedule. Without `NTFY_TOKEN`, the topic name is the only protection, so use a long random name and do not send sensitive content.
 
 ## Windows Reminder Setup
 
