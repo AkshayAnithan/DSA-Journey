@@ -125,6 +125,50 @@
       "notePath": "DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md",
       "status": "due",
       "history": []
+    },
+    {
+      "id": "buy-and-sell-crypto-same-day",
+      "title": "Buy and Sell Crypto",
+      "topic": "Sliding Window",
+      "stage": "same-day-recall",
+      "dueDate": "2026-08-28",
+      "prompt": "State the brute-force bottleneck and the minPrice/maxProfit invariant without notes.",
+      "notePath": "DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "buy-and-sell-crypto-reconstruction",
+      "title": "Buy and Sell Crypto",
+      "topic": "Sliding Window",
+      "stage": "reconstruction",
+      "dueDate": "2026-08-29",
+      "prompt": "Re-code the one-pass C++ solution from blank and explain why profit is checked before minPrice updates.",
+      "notePath": "DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "buy-and-sell-crypto-transfer",
+      "title": "Running minimum transfer",
+      "topic": "Sliding Window",
+      "stage": "transfer",
+      "dueDate": "2026-08-31",
+      "prompt": "Derive a maximum-difference solution where the smaller value must occur before the larger one.",
+      "notePath": "DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "buy-and-sell-crypto-contrast",
+      "title": "Running minimum versus variable window",
+      "topic": "Sliding Window",
+      "stage": "contrast",
+      "dueDate": "2026-09-04",
+      "prompt": "Explain why a duplicate-free substring needs a movable left boundary while Buy and Sell Crypto needs only a prefix minimum.",
+      "notePath": "DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md",
+      "status": "due",
+      "history": []
     }
   ]
 }

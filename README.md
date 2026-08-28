@@ -28,7 +28,7 @@ An accepted submission proves completion. It does **not** automatically prove re
 | Core problem bank | NeetCode 150 |
 | Imported submissions | 41 / 150 |
 | Study mode | 30-day pattern-mastery sprint |
-| Latest coached evidence | Median partition: hard problem completed with guided derivation; reconstruction scheduled |
+| Latest coached evidence | Buy and Sell Crypto: running-minimum derivation completed with bottleneck guidance |
 
 ## Coverage vs Mastery
 
@@ -38,7 +38,7 @@ Coverage tells us where code has been submitted. Mastery is deliberately stricte
 | --- | ---: | --- | --- | --- |
 | Arrays & Hashing | 9 / 9 | Complete | Unassessed | Blind reconstruction of prefix/suffix and hashing problems |
 | Two Pointers | 5 / 5 | Complete | Unassessed | Justify pointer moves, especially water/rain problems |
-| Sliding Window | 0 / 6 | Not started | Not assessed | Build variable-window invariants |
+| Sliding Window | 0 / 6 submitted + 1 coached pending commit | Started | Running-minimum prefix invariant introduced | Derive a variable-window invariant for no-repeated-character substring |
 | Stack | 6 / 7 | Strong coverage | Unassessed | Reconstruct monotonic-stack boundaries |
 | Binary Search | 6 / 7 submitted + 1 coached pending commit | Full problem coverage | Answer-space developing; rotated pivot recalled; predecessor search derived; median partition solution-dependent | Reconstruct median partition before treating binary search as strong |
 | Linked List | 0 / 11 | Not started | Not assessed | Start after binary-search consolidation |
@@ -74,6 +74,7 @@ No topic is marked mastered merely because its section is complete. A topic beco
 | Ordered-half target search | Identify a sorted half, then test whether target lies in its value range | [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md) | Needs reconstruction |
 | Rightmost-valid search | Find the latest sorted record satisfying `value <= threshold` | [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md) | Developing |
 | Partition search | Find a valid split across two sorted collections using four boundaries | [Median of Two Sorted Arrays](DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md) | Needs reconstruction |
+| Running prefix minimum | Best current result pairs with one best/worst earlier value | [Buy and Sell Crypto](DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md) | Developing |
 | Tree DFS contracts | A child returns exactly the information its parent needs | Diameter, Balance, Max Path Sum | Practiced |
 | Tree BFS | Output depends on levels or nearest distance | Level Order, Right Side View | Practiced |
 | BST invariants | Ordering has meaning across an entire subtree | Validate BST, Kth Smallest, LCA | Practiced |
@@ -115,6 +116,13 @@ No topic is marked mastered merely because its section is complete. A topic beco
 - Daily Temperatures
 - Car Fleet
 - Largest Rectangle in Histogram
+
+</details>
+
+<details>
+<summary><strong>Sliding Window · 0 / 6 submitted + 1 coached pending commit</strong></summary>
+
+- [Buy and Sell Crypto](DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md) - running minimum / one-pass prefix invariant
 
 </details>
 
@@ -179,19 +187,19 @@ I do not open solutions immediately. After a first-principles attempt, hints pro
 
 ## Current Focus
 
-### Binary Search: Two Different Search Structures
+### Sliding Window: Start With the Invariant
 
-The active lessons are [Koko Eating Bananas](DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md), [Find Minimum in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md), [Search in Rotated Sorted Array](DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md), [Time Based Key-Value Store](DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md), and [Median of Two Sorted Arrays](DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md).
+The active lesson is [Buy and Sell Crypto](DSA-Mastery/03-Sliding-Window/Buy-and-Sell-Crypto.md). It uses a prefix summary, not a movable window: the current sale needs only the cheapest earlier price.
 
 Key retrieval rule:
 
-> Binary search needs a justified discard rule, not necessarily a globally sorted array. In Koko, discard answer values using monotonic feasibility. In rotated arrays, discard index ranges using an ordered-half test. In Time Map, find the rightmost sorted timestamp satisfying a threshold. In median partitioning, search a cut count until four boundaries form a valid split.
+> When a problem compares every current value with prior values, first ask whether one running summary replaces the entire prior prefix. A movable left boundary is needed only when validity can be restored by removing old elements.
 
 Next progression:
 
-1. Reconstruct the four-boundary setup for median partitioning from a blank editor.
-2. Reconstruct Time Map's rightmost-valid lookup, including the no-candidate sentinel.
-3. Contrast answer-space, rotated-index, predecessor, and partition binary search.
+1. Attempt `Longest Substring Without Repeating Characters` without naming its pattern first.
+2. Contrast its movable left boundary with Buy and Sell Crypto's running minimum.
+3. Complete the Buy and Sell Crypto same-day recall from the revision dashboard.
 
 ## Repository Guide
 
