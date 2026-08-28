@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "settings": {
+    "dailyLimit": 3,
+    "timezone": "Asia/Kolkata"
+  },
+  "reviews": [
+    {
+      "id": "koko-eating-bananas-same-day",
+      "title": "Koko Eating Bananas",
+      "topic": "Binary Search",
+      "stage": "same-day-recall",
+      "dueDate": "2026-08-22",
+      "prompt": "Explain answer-space, monotonicity, invariant, and boundaries without notes.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "koko-eating-bananas-reconstruction",
+      "title": "Koko Eating Bananas",
+      "topic": "Binary Search",
+      "stage": "reconstruction",
+      "dueDate": "2026-08-23",
+      "prompt": "Re-code in C++ from blank; state invariant before coding.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "rotated-array-search-contrast",
+      "title": "Rotated-array search contrast",
+      "topic": "Binary Search",
+      "stage": "contrast",
+      "dueDate": "2026-08-29",
+      "prompt": "Explain index search versus answer-space search.",
+      "notePath": "DSA-Mastery/05-Binary-Search/README.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "find-minimum-rotated-reconstruction",
+      "title": "Find Minimum in Rotated Sorted Array",
+      "topic": "Binary Search",
+      "stage": "reconstruction",
+      "dueDate": "2026-08-25",
+      "prompt": "Re-code the compact C++ version from blank; explain why right = mid.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "search-rotated-array-transfer",
+      "title": "Search in Rotated Sorted Array",
+      "topic": "Binary Search",
+      "stage": "transfer",
+      "dueDate": "2026-08-27",
+      "prompt": "Independently derive which ordered half can be discarded for a target.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Search-Rotated-Sorted-Array.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "time-map-reconstruction",
+      "title": "Time Based Key-Value Store",
+      "topic": "Binary Search",
+      "stage": "reconstruction",
+      "dueDate": "2026-08-25",
+      "prompt": "Re-code get from blank, including the query-before-first-timestamp case.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "rightmost-predecessor-transfer",
+      "title": "Rightmost predecessor helper",
+      "topic": "Binary Search",
+      "stage": "transfer",
+      "dueDate": "2026-08-27",
+      "prompt": "Write and explain rightmost value <= target binary search for integers.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Time-Based-Key-Value-Store.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "median-boundary-reconstruction",
+      "title": "Median of Two Sorted Arrays",
+      "topic": "Binary Search",
+      "stage": "boundary-reconstruction",
+      "dueDate": "2026-08-27",
+      "prompt": "Write cutA, cutB, and the four boundaries from a blank editor.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "median-full-reconstruction",
+      "title": "Median of Two Sorted Arrays",
+      "topic": "Binary Search",
+      "stage": "full-reconstruction",
+      "dueDate": "2026-08-29",
+      "prompt": "Implement the partition search in C++ without notes.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "median-partition-contrast",
+      "title": "Median partition off-by-one",
+      "topic": "Binary Search",
+      "stage": "contrast",
+      "dueDate": "2026-09-02",
+      "prompt": "Explain why a cut after A's last element needs rightA = INT_MAX.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md",
+      "status": "due",
+      "history": []
+    },
+    {
+      "id": "median-blind-derivation",
+      "title": "Median of Two Sorted Arrays",
+      "topic": "Binary Search",
+      "stage": "blind-derivation",
+      "dueDate": "2026-09-09",
+      "prompt": "Re-derive a valid partition from a new example before viewing notes.",
+      "notePath": "DSA-Mastery/05-Binary-Search/Median-of-Two-Sorted-Arrays.md",
+      "status": "due",
+      "history": []
+    }
+  ]
+}

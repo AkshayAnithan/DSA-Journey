@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d302d">
+    <title>DSA Revision Desk</title>
+    <link rel="stylesheet" href="/revision-dashboard/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">DSA Mastery</p>
+          <h1>Revision Desk</h1>
+        </div>
+        <div class="date-panel" id="today-label"></div>
+      </header>
+
+      <section class="summary" aria-label="Revision summary">
+        <div class="progress-copy">
+          <p class="eyebrow">Today&apos;s commitment</p>
+          <p class="summary-number"><span id="completed-count">0</span> <span class="muted">of</span> <span id="queue-count">0</span></p>
+          <p id="summary-message" class="summary-message"></p>
+        </div>
+        <div class="summary-actions">
+          <span id="overdue-count" class="overdue-badge"></span>
+          <button class="icon-button" id="refresh-button" type="button" aria-label="Refresh revision queue" title="Refresh revision queue">↻</button>
+        </div>
+      </section>
+
+      <section aria-labelledby="queue-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Attempt before notes</p>
+            <h2 id="queue-heading">Today&apos;s queue</h2>
+          </div>
+          <span id="queue-limit" class="queue-limit"></span>
+        </div>
+        <div id="queue" class="review-list" aria-live="polite"></div>
+      </section>
+
+      <section class="up-next" aria-labelledby="up-next-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Not due yet</p>
+            <h2 id="up-next-heading">Coming up</h2>
+          </div>
+        </div>
+        <div id="up-next" class="up-next-list"></div>
+      </section>
+    </main>
+    <template id="review-template">
+      <article class="review-card">
+        <div class="review-order"></div>
+        <div class="review-content">
+          <div class="review-header">
+            <div>
+              <p class="review-topic"></p>
+              <h3 class="review-title"></h3>
+            </div>
+            <span class="stage-label"></span>
+          </div>
+          <p class="review-prompt"></p>
+          <div class="review-footer">
+            <span class="due-label"></span>
+            <a class="note-link" target="_blank" rel="noreferrer">Open notes <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="outcome-actions" aria-label="Record review outcome">
+            <button class="outcome pass" type="button">Pass</button>
+            <button class="outcome partial" type="button">Partial</button>
+            <button class="outcome retry" type="button">Retry</button>
+          </div>
+        </div>
+      </article>
+    </template>
+    <script type="module" src="/revision-dashboard/app.js"></script>
+  </body>
+</html>

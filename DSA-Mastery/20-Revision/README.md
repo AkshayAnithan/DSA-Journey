@@ -1,5 +1,31 @@
 # Revision Queue
 
+The live revision state is in [revision-state.json](revision-state.json). Run `npm start` at the repository root and open [http://localhost:4173](http://localhost:4173) to attempt today's queue, record an outcome, and automatically schedule its next review.
+
+The legacy table below is the initial imported queue. New outcomes are recorded in `revision-state.json` by the dashboard.
+
+## Mobile Reminder Setup
+
+1. Install the [ntfy](https://ntfy.sh) mobile app and subscribe to a private, long random topic.
+2. Create an ntfy access token with publish access to that topic.
+3. In this repository on GitHub, add Actions secrets named `NTFY_TOPIC` and `NTFY_TOKEN`.
+4. Push this repository. The [daily workflow](../../.github/workflows/send-daily-revision-reminder.yml) runs at 7:30 PM IST (`14:00 UTC`) and sends up to three due reviews.
+
+The workflow reads the committed revision state. After recording outcomes locally, commit and push `revision-state.json` before the next mobile reminder so it uses the latest schedule.
+
+## Windows Reminder Setup
+
+The dashboard works without any extra packages. For a Windows toast when the laptop is on:
+
+1. Run `Install-Module BurntToast -Scope CurrentUser` once in PowerShell.
+2. Create a daily Windows Task Scheduler task that runs:
+
+	```powershell
+	powershell.exe -ExecutionPolicy Bypass -File "C:\Akshay\DSA Prep\scripts\show-windows-reminder.ps1"
+	```
+
+The script reads the same `revision-state.json` as the dashboard and mobile workflow.
+
 Use this folder for active-recall prompts and review queues. Do not read a pattern note before attempting its prompt.
 
 | Due date | Item | Type | Target evidence | Result |

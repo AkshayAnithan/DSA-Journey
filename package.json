@@ -1,0 +1,10 @@
+{
+  "name": "dsa-journey",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local revision dashboard and reminder tooling for DSA Mastery.",
+  "scripts": {
+    "start": "node scripts/server.mjs",
+    "remind": "node scripts/send-reminder.mjs"
+  }
+}

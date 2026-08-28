@@ -6,7 +6,7 @@
 
 `41 / 150 submitted` · `Evidence-based mastery tracking` · `Active recall + transfer practice`
 
-[Mastery System](DSA-Mastery/README.md) · [30-Day Playbook](DSA-Mastery/00-Foundations/30-Day-Study-Playbook.md) · [Revision Queue](DSA-Mastery/20-Revision/README.md) · [Problem Ledger](DSA-Mastery/Problem-Index/Imported-Completion-Ledger.md)
+[Mastery System](DSA-Mastery/README.md) · [30-Day Playbook](DSA-Mastery/00-Foundations/30-Day-Study-Playbook.md) · [Revision Queue](DSA-Mastery/20-Revision/README.md) · [Revision Dashboard](revision-dashboard/index.html) · [Problem Ledger](DSA-Mastery/Problem-Index/Imported-Completion-Ledger.md)
 
 </div>
 
