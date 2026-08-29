@@ -57,11 +57,18 @@
       "title": "Find Minimum in Rotated Sorted Array",
       "topic": "Binary Search",
       "stage": "reconstruction",
-      "dueDate": "2026-08-25",
+      "dueDate": "2026-08-30",
       "prompt": "Re-code the compact C++ version from blank; explain why right = mid.",
       "notePath": "DSA-Mastery/05-Binary-Search/Find-Minimum-Rotated-Sorted-Array.md",
       "status": "due",
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-29",
+          "outcome": "solution-dependent",
+          "stage": "reconstruction",
+          "note": "Recognized rotated binary search but could not retrieve the midpoint-versus-boundary discard rule without viewing the prior submission."
+        }
+      ]
     },
     {
       "id": "search-rotated-array-transfer",
