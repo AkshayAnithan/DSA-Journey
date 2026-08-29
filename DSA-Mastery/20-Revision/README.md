@@ -30,8 +30,8 @@ Use this folder for active-recall prompts and review queues. Do not read a patte
 
 | Due date | Item | Type | Target evidence | Result |
 | --- | --- | --- | --- | --- |
-| 2026-08-22 | Koko Eating Bananas | Same-day recall | Explain answer-space, monotonicity, invariant, and boundaries without notes | Pending |
-| 2026-08-23 | Koko Eating Bananas | Reconstruction | Re-code in C++ from blank; state invariant before coding | Pending |
+| 2026-08-29 | Koko Eating Bananas | Same-day recall | Explain answer-space, monotonicity, invariant, and boundaries without notes | Passed after one boundary-direction terminology correction |
+| 2026-08-30 | Koko Eating Bananas | Reconstruction | Re-code in C++ from blank; state invariant before coding | Partial; repeat after correcting legal lower bound and answer initialization |
 | 2026-08-25 | Capacity To Ship Packages Within D Days | Transfer | Independently derive minimum-feasible binary search | Pending |
 | 2026-08-29 | Rotated-array search contrast | Contrast | Explain index search versus answer-space search | Pending |
 | 2026-08-24 | Find Minimum in Rotated Sorted Array | Same-day recall | State the endpoint comparison and the compact loop invariant without notes | Completed with one boundary clarification |

@@ -13,19 +13,33 @@
       "dueDate": "2026-08-22",
       "prompt": "Explain answer-space, monotonicity, invariant, and boundaries without notes.",
       "notePath": "DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md",
-      "status": "due",
-      "history": []
+      "status": "completed",
+      "history": [
+        {
+          "date": "2026-08-29",
+          "outcome": "pass",
+          "stage": "same-day-recall",
+          "note": "Recalled the legal lower bound, feasibility condition, and minimum-feasible direction after one boundary-direction terminology correction."
+        }
+      ]
     },
     {
       "id": "koko-eating-bananas-reconstruction",
       "title": "Koko Eating Bananas",
       "topic": "Binary Search",
       "stage": "reconstruction",
-      "dueDate": "2026-08-23",
+      "dueDate": "2026-08-30",
       "prompt": "Re-code in C++ from blank; state invariant before coding.",
       "notePath": "DSA-Mastery/05-Binary-Search/Koko-Eating-Bananas.md",
       "status": "due",
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-29",
+          "outcome": "partial",
+          "stage": "reconstruction",
+          "note": "Derived the minimum-feasible search structure but needed help correcting speed = 0 division and uninitialized answer handling."
+        }
+      ]
     },
     {
       "id": "rotated-array-search-contrast",
